@@ -10,7 +10,7 @@ def log_transformation(df, features):
 
 def transform_totalBsmtSF(df):
     feature = 'TotalBsmtSF'
-    df['HasBsmt'] = np.where(df[feature] > 0, 0, 1)
+    df['HasBsmt'] = np.where(df[feature] > 0, 1, 0)
 
     def log(x):
         if x > 0:

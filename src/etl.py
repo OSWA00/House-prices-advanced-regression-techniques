@@ -16,12 +16,16 @@ import numpy as np
 from utility import parse_config
 from transform import transform_totalBsmtSF, log_transformation
 
+
 @click.command()
 @click.argument("config_file", type=str, default="src/config.yml")
 def elt(config_file):
 
     # Configure logger
-    logging.basicConfig(filename='./log/etl.log', level=logging.DEBUG)
+    logging.basicConfig(filename='./log/etl.log',
+                        format='%(asctime)s %(levelname)-8s %(message)s',
+                        level=logging.DEBUG,
+                        datefmt='%Y-%m-%d %H:%M:%S')
 
     # Load config.yml
     logging.info("Config file: {}".format(config_file))
@@ -37,7 +41,8 @@ def elt(config_file):
     df_test = pd.read_csv(raw_data_no_labels)
 
     target_variable = 'SalePrice'
-    features = ['OverallQual', 'GrLivArea', 'GarageCars', 'TotalBsmtSF', 'FullBath', 'YearBuilt']
+    features = ['OverallQual', 'GrLivArea', 'GarageCars',
+                'TotalBsmtSF', 'FullBath', 'YearBuilt']
 
     data_target_variable = df_train[target_variable]
 
@@ -63,9 +68,15 @@ def elt(config_file):
 
     logging.info("Normalized test & train data")
 
+    df_train = pd.get_dummies(df_train)
+    df_test = pd.get_dummies(df_test)
 
+    logging.info("Convert categorical features to indicators")
 
+    df_train.to_csv("./data/train.csv")
+    df_test.to_csv("./data/test.csv")
 
+    logging.info("train.csv  & test.csv updated")
 
 
 if __name__ == '__main__':

@@ -1,7 +1,7 @@
 
 etl:
     raw_data_file: "data/iowa_houses_data.csv"
-    raw_data_file_no_labels: "data/iowa_houses_data_no_label.csv"
+    raw_data_file_no_label: "data/iowa_houses_data_no_label.csv"
 
 train:
     pass

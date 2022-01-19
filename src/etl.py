@@ -14,6 +14,7 @@ import pandas as pd
 import numpy as np
 
 from utility import parse_config
+from transform import transform_totalBsmtSF, log_transformation
 
 @click.command()
 @click.argument("config_file", type=str, default="src/config.yml")
@@ -31,7 +32,7 @@ def elt(config_file):
 
     logging.info("config: {}".format(config['etl']))
 
-    # Data transformation
+    # Data loading
     df_train = pd.read_csv(raw_data)
     df_test = pd.read_csv(raw_data_no_labels)
 
@@ -43,8 +44,25 @@ def elt(config_file):
     df_test = df_test[features]
     df_train = df_train[features]
     df_train[target_variable] = data_target_variable
-    
-    
+
+    logging.info("Data loaded")
+
+    # Deleting outliers
+    df_train = df_train.drop(df_train[df_train['GrLivArea'] > 4000].index)
+    df_train = df_train.drop(df_train[df_train['TotalBsmtSF'] > 3000].index)
+
+    logging.info("Removed outliers from trained data")
+
+    # Normalize data
+    features_to_transform = ['GrLivArea', 'SalePrice']
+    df_train = log_transformation(df_train, features_to_transform)
+    df_test = log_transformation(df_test, [features_to_transform[0]])
+
+    df_train = transform_totalBsmtSF(df_train)
+    df_test = transform_totalBsmtSF(df_test)
+
+    logging.info("Normalized test & train data")
+
 
 
 

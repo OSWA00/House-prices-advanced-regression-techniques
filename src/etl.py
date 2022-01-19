@@ -1,5 +1,5 @@
 """
-Th
+Extracts, transform and load the iowa houses dataset
 
 Usage: 
     python3 ./scripts/etl.py

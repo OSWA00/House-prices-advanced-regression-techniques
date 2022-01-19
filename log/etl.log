@@ -1,0 +1,7 @@
+2022-01-19 09:52:00 INFO     Config file: src/config.yml
+2022-01-19 09:52:00 INFO     config: {'raw_data_file': 'data/iowa_houses_data.csv', 'raw_data_file_no_label': 'data/iowa_houses_data_no_label.csv'}
+2022-01-19 09:52:00 INFO     Data loaded
+2022-01-19 09:52:00 INFO     Removed outliers from trained data
+2022-01-19 09:52:00 INFO     Normalized test & train data
+2022-01-19 09:52:00 INFO     Convert categorical features to indicators
+2022-01-19 09:52:00 INFO     train.csv  & test.csv updated

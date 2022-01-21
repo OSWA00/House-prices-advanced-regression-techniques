@@ -1,13 +1,15 @@
+'''
+Predicts and exports from processed data
+
+Usage:
+    python3 ./src/predict.py
+'''
 import logging
 from pathlib import Path
 from pickle import load
 
 import pandas as pd
 import click
-
-from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import StandardScaler
-from xgboost import XGBRegressor
 
 from utility import parse_config
 

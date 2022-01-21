@@ -14,5 +14,8 @@ train:
     model_path: "model/regressor.pkl"
 
 predict:
-    pass
+    model_path: "model/regressor.pkl"
+    processed_test: "data/test.csv"
+    export_path: "data/prediction.csv"
+
 

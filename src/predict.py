@@ -36,6 +36,10 @@ def predict(config_file):
 
     # Load data 
     X = pd.read_csv(processed_data)
+    y_predicted = pd.DataFrame(columns=['SalePrice', 'Id'])
+    y_predicted['Id'] = X['Id']
+    X = X.drop('Id', axis=1)
+
     logging.info("Data loaded")
 
     # Load model
@@ -46,7 +50,6 @@ def predict(config_file):
     logging.info("Trained model loaded from {}".format(model_path))
 
     # Predict
-    y_predicted = pd.DataFrame(columns=['SalePrice'])
     y_predicted['SalePrice'] = trained_model.predict(X)
     y_predicted['SalePrice'] = np.exp(y_predicted['SalePrice'])
     logging.info("Prediction done")

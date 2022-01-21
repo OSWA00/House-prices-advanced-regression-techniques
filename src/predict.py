@@ -52,7 +52,7 @@ def predict(config_file):
     logging.info("Prediction done")
 
     # Export result
-    y_predicted.to_csv(export_path, index=False)
+    y_predicted.to_csv(export_path, index=True, index_label='Id')
     logging.info("Output file written to {}".format(export_path))
 
 

@@ -73,8 +73,8 @@ def elt(config_file):
 
     logging.info("Convert categorical features to indicators")
 
-    df_train.to_csv("./data/train.csv")
-    df_test.to_csv("./data/test.csv")
+    df_train.to_csv("./data/train.csv", index=False)
+    df_test.to_csv("./data/test.csv", index=False)
 
     logging.info("train.csv  & test.csv updated")
 

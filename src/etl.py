@@ -42,7 +42,7 @@ def elt(config_file):
 
     target_variable = 'SalePrice'
     features = ['OverallQual', 'GrLivArea', 'GarageCars',
-                'TotalBsmtSF', 'FullBath', 'YearBuilt']
+                'TotalBsmtSF', 'FullBath', 'YearBuilt', 'Id']
 
     data_target_variable = df_train[target_variable]
 

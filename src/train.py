@@ -43,7 +43,7 @@ def train(config_file):
     # Load proccessed data
     df_train = pd.read_csv(processed_data)
 
-    X = df_train.drop(['SalePrice'], axis=1)
+    X = df_train.drop(['SalePrice', 'Id'], axis=1)
     y = df_train['SalePrice']
 
     logging.info("Proccesed data loaded")

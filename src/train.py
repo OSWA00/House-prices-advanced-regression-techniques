@@ -1,4 +1,10 @@
+'''
+Creates and trains model pipeline and exports to model path.
 
+Usage:
+    python3 ./src/train.py
+    
+'''
 
 import logging
 from pathlib import Path
@@ -63,7 +69,6 @@ def train(config_file):
     with open(model_path, 'wb') as f:
         dump(pipeline, f)
     logging.info(f"Persisted model to {model_path}")
-    
 
 
 if __name__ == '__main__':

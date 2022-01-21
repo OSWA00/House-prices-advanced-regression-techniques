@@ -4,7 +4,14 @@ etl:
     raw_data_file_no_label: "data/iowa_houses_data_no_label.csv"
 
 train:
-    pass
+    processed_train: "data/train.csv"
+    pipeline_config: {
+        "model__max_depth": 3,
+        "model__learning_rate": 0.01,
+        "model__seed": 42,
+        "model__n_estimators": 1000
+    }
+    model_path: "model/regressor.pkl"
 
 predict:
     pass

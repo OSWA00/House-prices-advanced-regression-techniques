@@ -1,0 +1,145 @@
+2022-01-21 08:53:09 INFO     Config file: src/config.yml
+2022-01-21 08:53:09 INFO     config: {'processed_train': 'data/train.csv', 'pipeline_config': {'model__max_depth': 3, 'model__learning_rate': 0.01, 'model__seed': 42, 'model__n_estimators': 1000}, 'model_path': 'model/regressor.pkl'}
+2022-01-21 09:23:08 INFO     Config file: src/config.yml
+2022-01-21 09:23:08 INFO     config: {'processed_train': 'data/train.csv', 'pipeline_config': {'model__max_depth': 3, 'model__learning_rate': 0.01, 'model__seed': 42, 'model__n_estimators': 1000}, 'model_path': 'model/regressor.pkl'}
+2022-01-21 09:31:42 INFO     Config file: src/config.yml
+2022-01-21 09:31:42 INFO     config: {'processed_train': 'data/train.csv', 'pipeline_config': {'model__max_depth': 3, 'model__learning_rate': 0.01, 'model__seed': 42, 'model__n_estimators': 1000}, 'model_path': 'model/regressor.pkl'}
+2022-01-21 09:31:42 INFO     Proccesed data loaded
+2022-01-21 09:33:23 INFO     Config file: src/config.yml
+2022-01-21 09:33:23 INFO     config: {'processed_train': 'data/train.csv', 'pipeline_config': {'model__max_depth': 3, 'model__learning_rate': 0.01, 'model__seed': 42, 'model__n_estimators': 1000}, 'model_path': 'model/regressor.pkl'}
+2022-01-21 09:33:23 INFO     Proccesed data loaded
+2022-01-21 09:34:28 INFO     Config file: src/config.yml
+2022-01-21 09:34:28 INFO     config: {'processed_train': 'data/train.csv', 'pipeline_config': {'model__max_depth': 3, 'model__learning_rate': 0.01, 'model__seed': 42, 'model__n_estimators': 1000}, 'model_path': 'model/regressor.pkl'}
+2022-01-21 09:34:28 INFO     Proccesed data loaded
+2022-01-21 09:34:57 INFO     Config file: src/config.yml
+2022-01-21 09:34:57 INFO     config: {'processed_train': 'data/train.csv', 'pipeline_config': {'model__max_depth': 3, 'model__learning_rate': 0.01, 'model__seed': 42, 'model__n_estimators': 1000}, 'model_path': 'model/regressor.pkl'}
+2022-01-21 09:34:57 INFO     Proccesed data loaded
+2022-01-21 09:36:27 INFO     Config file: src/config.yml
+2022-01-21 09:36:27 INFO     config: {'processed_train': 'data/train.csv', 'pipeline_config': {'model__max_depth': 3, 'model__learning_rate': 0.01, 'model__seed': 42, 'model__n_estimators': 1000}, 'model_path': 'model/regressor.pkl'}
+2022-01-21 09:36:27 INFO     Proccesed data loaded
+2022-01-21 09:37:32 INFO     Config file: src/config.yml
+2022-01-21 09:37:33 INFO     config: {'processed_train': 'data/train.csv', 'pipeline_config': {'model__max_depth': 3, 'model__learning_rate': 0.01, 'model__seed': 42, 'model__n_estimators': 1000}, 'model_path': 'model/regressor.pkl'}
+2022-01-21 09:37:33 INFO     Proccesed data loaded
+2022-01-21 09:38:35 INFO     Config file: src/config.yml
+2022-01-21 09:38:35 INFO     config: {'processed_train': 'data/train.csv', 'pipeline_config': {'model__max_depth': 3, 'model__learning_rate': 0.01, 'model__seed': 42, 'model__n_estimators': 1000}, 'model_path': 'model/regressor.pkl'}
+2022-01-21 09:38:35 INFO     Proccesed data loaded
+2022-01-21 09:40:22 INFO     Config file: src/config.yml
+2022-01-21 09:40:22 INFO     config: {'processed_train': 'data/train.csv', 'pipeline_config': {'model__max_depth': 3, 'model__learning_rate': 0.01, 'model__seed': 42, 'model__n_estimators': 1000}, 'model_path': 'model/regressor.pkl'}
+2022-01-21 09:40:22 INFO     Proccesed data loaded
+2022-01-21 09:40:22 INFO     Pipeline created
+2022-01-21 09:40:22 INFO     Pipeline paramaters {'memory': None, 'steps': [('scaler', StandardScaler()), ('model', XGBRegressor(base_score=None, booster=None, colsample_bylevel=None,
+             colsample_bynode=None, colsample_bytree=None,
+             enable_categorical=False, gamma=None, gpu_id=None,
+             importance_type=None, interaction_constraints=None,
+             learning_rate=0.01, max_delta_step=None, max_depth=3,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=1000, n_jobs=None, num_parallel_tree=None,
+             predictor=None, random_state=None, reg_alpha=None, reg_lambda=None,
+             scale_pos_weight=None, seed=42, subsample=None, tree_method=None,
+             validate_parameters=None, verbosity=None))], 'verbose': False, 'scaler': StandardScaler(), 'model': XGBRegressor(base_score=None, booster=None, colsample_bylevel=None,
+             colsample_bynode=None, colsample_bytree=None,
+             enable_categorical=False, gamma=None, gpu_id=None,
+             importance_type=None, interaction_constraints=None,
+             learning_rate=0.01, max_delta_step=None, max_depth=3,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=1000, n_jobs=None, num_parallel_tree=None,
+             predictor=None, random_state=None, reg_alpha=None, reg_lambda=None,
+             scale_pos_weight=None, seed=42, subsample=None, tree_method=None,
+             validate_parameters=None, verbosity=None), 'scaler__copy': True, 'scaler__with_mean': True, 'scaler__with_std': True, 'model__objective': 'reg:squarederror', 'model__base_score': None, 'model__booster': None, 'model__colsample_bylevel': None, 'model__colsample_bynode': None, 'model__colsample_bytree': None, 'model__enable_categorical': False, 'model__gamma': None, 'model__gpu_id': None, 'model__importance_type': None, 'model__interaction_constraints': None, 'model__learning_rate': 0.01, 'model__max_delta_step': None, 'model__max_depth': 3, 'model__min_child_weight': None, 'model__missing': nan, 'model__monotone_constraints': None, 'model__n_estimators': 1000, 'model__n_jobs': None, 'model__num_parallel_tree': None, 'model__predictor': None, 'model__random_state': None, 'model__reg_alpha': None, 'model__reg_lambda': None, 'model__scale_pos_weight': None, 'model__subsample': None, 'model__tree_method': None, 'model__validate_parameters': None, 'model__verbosity': None, 'model__seed': 42}
+2022-01-21 09:43:08 INFO     Config file: src/config.yml
+2022-01-21 09:43:08 INFO     config: {'processed_train': 'data/train.csv', 'pipeline_config': {'model__max_depth': 3, 'model__learning_rate': 0.01, 'model__seed': 42, 'model__n_estimators': 1000}, 'model_path': 'model/regressor.pkl'}
+2022-01-21 09:43:08 INFO     Proccesed data loaded
+2022-01-21 09:43:08 INFO     Pipeline created
+2022-01-21 09:43:08 INFO     Pipeline paramaters {'memory': None, 'steps': [('scaler', StandardScaler()), ('model', XGBRegressor(base_score=None, booster=None, colsample_bylevel=None,
+             colsample_bynode=None, colsample_bytree=None,
+             enable_categorical=False, gamma=None, gpu_id=None,
+             importance_type=None, interaction_constraints=None,
+             learning_rate=0.01, max_delta_step=None, max_depth=3,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=1000, n_jobs=None, num_parallel_tree=None,
+             predictor=None, random_state=None, reg_alpha=None, reg_lambda=None,
+             scale_pos_weight=None, seed=42, subsample=None, tree_method=None,
+             validate_parameters=None, verbosity=None))], 'verbose': False, 'scaler': StandardScaler(), 'model': XGBRegressor(base_score=None, booster=None, colsample_bylevel=None,
+             colsample_bynode=None, colsample_bytree=None,
+             enable_categorical=False, gamma=None, gpu_id=None,
+             importance_type=None, interaction_constraints=None,
+             learning_rate=0.01, max_delta_step=None, max_depth=3,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=1000, n_jobs=None, num_parallel_tree=None,
+             predictor=None, random_state=None, reg_alpha=None, reg_lambda=None,
+             scale_pos_weight=None, seed=42, subsample=None, tree_method=None,
+             validate_parameters=None, verbosity=None), 'scaler__copy': True, 'scaler__with_mean': True, 'scaler__with_std': True, 'model__objective': 'reg:squarederror', 'model__base_score': None, 'model__booster': None, 'model__colsample_bylevel': None, 'model__colsample_bynode': None, 'model__colsample_bytree': None, 'model__enable_categorical': False, 'model__gamma': None, 'model__gpu_id': None, 'model__importance_type': None, 'model__interaction_constraints': None, 'model__learning_rate': 0.01, 'model__max_delta_step': None, 'model__max_depth': 3, 'model__min_child_weight': None, 'model__missing': nan, 'model__monotone_constraints': None, 'model__n_estimators': 1000, 'model__n_jobs': None, 'model__num_parallel_tree': None, 'model__predictor': None, 'model__random_state': None, 'model__reg_alpha': None, 'model__reg_lambda': None, 'model__scale_pos_weight': None, 'model__subsample': None, 'model__tree_method': None, 'model__validate_parameters': None, 'model__verbosity': None, 'model__seed': 42}
+2022-01-21 09:47:22 INFO     Config file: src/config.yml
+2022-01-21 09:47:22 INFO     config: {'processed_train': 'data/train.csv', 'pipeline_config': {'model__max_depth': 3, 'model__learning_rate': 0.01, 'model__seed': 42, 'model__n_estimators': 1000}, 'model_path': 'model/regressor.pkl'}
+2022-01-21 09:47:22 INFO     Proccesed data loaded
+2022-01-21 09:47:22 INFO     Pipeline created
+2022-01-21 09:47:22 INFO     Pipeline paramaters {'memory': None, 'steps': [('scaler', StandardScaler()), ('model', XGBRegressor(base_score=None, booster=None, colsample_bylevel=None,
+             colsample_bynode=None, colsample_bytree=None,
+             enable_categorical=False, gamma=None, gpu_id=None,
+             importance_type=None, interaction_constraints=None,
+             learning_rate=0.01, max_delta_step=None, max_depth=3,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=1000, n_jobs=None, num_parallel_tree=None,
+             predictor=None, random_state=None, reg_alpha=None, reg_lambda=None,
+             scale_pos_weight=None, seed=42, subsample=None, tree_method=None,
+             validate_parameters=None, verbosity=None))], 'verbose': False, 'scaler': StandardScaler(), 'model': XGBRegressor(base_score=None, booster=None, colsample_bylevel=None,
+             colsample_bynode=None, colsample_bytree=None,
+             enable_categorical=False, gamma=None, gpu_id=None,
+             importance_type=None, interaction_constraints=None,
+             learning_rate=0.01, max_delta_step=None, max_depth=3,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=1000, n_jobs=None, num_parallel_tree=None,
+             predictor=None, random_state=None, reg_alpha=None, reg_lambda=None,
+             scale_pos_weight=None, seed=42, subsample=None, tree_method=None,
+             validate_parameters=None, verbosity=None), 'scaler__copy': True, 'scaler__with_mean': True, 'scaler__with_std': True, 'model__objective': 'reg:squarederror', 'model__base_score': None, 'model__booster': None, 'model__colsample_bylevel': None, 'model__colsample_bynode': None, 'model__colsample_bytree': None, 'model__enable_categorical': False, 'model__gamma': None, 'model__gpu_id': None, 'model__importance_type': None, 'model__interaction_constraints': None, 'model__learning_rate': 0.01, 'model__max_delta_step': None, 'model__max_depth': 3, 'model__min_child_weight': None, 'model__missing': nan, 'model__monotone_constraints': None, 'model__n_estimators': 1000, 'model__n_jobs': None, 'model__num_parallel_tree': None, 'model__predictor': None, 'model__random_state': None, 'model__reg_alpha': None, 'model__reg_lambda': None, 'model__scale_pos_weight': None, 'model__subsample': None, 'model__tree_method': None, 'model__validate_parameters': None, 'model__verbosity': None, 'model__seed': 42}
+2022-01-21 09:49:02 INFO     Config file: src/config.yml
+2022-01-21 09:49:02 INFO     config: {'processed_train': 'data/train.csv', 'pipeline_config': {'model__max_depth': 3, 'model__learning_rate': 0.01, 'model__seed': 42, 'model__n_estimators': 1000}, 'model_path': 'model/regressor.pkl'}
+2022-01-21 09:49:02 INFO     Proccesed data loaded
+2022-01-21 09:49:02 INFO     Pipeline created
+2022-01-21 09:49:02 INFO     Pipeline paramaters {'memory': None, 'steps': [('scaler', StandardScaler()), ('model', XGBRegressor(base_score=None, booster=None, colsample_bylevel=None,
+             colsample_bynode=None, colsample_bytree=None,
+             enable_categorical=False, gamma=None, gpu_id=None,
+             importance_type=None, interaction_constraints=None,
+             learning_rate=0.01, max_delta_step=None, max_depth=3,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=1000, n_jobs=None, num_parallel_tree=None,
+             predictor=None, random_state=None, reg_alpha=None, reg_lambda=None,
+             scale_pos_weight=None, seed=42, subsample=None, tree_method=None,
+             validate_parameters=None, verbosity=None))], 'verbose': False, 'scaler': StandardScaler(), 'model': XGBRegressor(base_score=None, booster=None, colsample_bylevel=None,
+             colsample_bynode=None, colsample_bytree=None,
+             enable_categorical=False, gamma=None, gpu_id=None,
+             importance_type=None, interaction_constraints=None,
+             learning_rate=0.01, max_delta_step=None, max_depth=3,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=1000, n_jobs=None, num_parallel_tree=None,
+             predictor=None, random_state=None, reg_alpha=None, reg_lambda=None,
+             scale_pos_weight=None, seed=42, subsample=None, tree_method=None,
+             validate_parameters=None, verbosity=None), 'scaler__copy': True, 'scaler__with_mean': True, 'scaler__with_std': True, 'model__objective': 'reg:squarederror', 'model__base_score': None, 'model__booster': None, 'model__colsample_bylevel': None, 'model__colsample_bynode': None, 'model__colsample_bytree': None, 'model__enable_categorical': False, 'model__gamma': None, 'model__gpu_id': None, 'model__importance_type': None, 'model__interaction_constraints': None, 'model__learning_rate': 0.01, 'model__max_delta_step': None, 'model__max_depth': 3, 'model__min_child_weight': None, 'model__missing': nan, 'model__monotone_constraints': None, 'model__n_estimators': 1000, 'model__n_jobs': None, 'model__num_parallel_tree': None, 'model__predictor': None, 'model__random_state': None, 'model__reg_alpha': None, 'model__reg_lambda': None, 'model__scale_pos_weight': None, 'model__subsample': None, 'model__tree_method': None, 'model__validate_parameters': None, 'model__verbosity': None, 'model__seed': 42}
+2022-01-21 09:49:09 INFO     Train score: 0.8916531032799216
+2022-01-21 09:49:40 INFO     CV score: 0.8418754949572811
+2022-01-21 09:52:30 INFO     Config file: src/config.yml
+2022-01-21 09:52:30 INFO     config: {'processed_train': 'data/train.csv', 'pipeline_config': {'model__max_depth': 3, 'model__learning_rate': 0.01, 'model__seed': 42, 'model__n_estimators': 1000}, 'model_path': 'model/regressor.pkl'}
+2022-01-21 09:52:30 INFO     Proccesed data loaded
+2022-01-21 09:52:30 INFO     Pipeline created
+2022-01-21 09:52:30 INFO     Pipeline paramaters {'memory': None, 'steps': [('scaler', StandardScaler()), ('model', XGBRegressor(base_score=None, booster=None, colsample_bylevel=None,
+             colsample_bynode=None, colsample_bytree=None,
+             enable_categorical=False, gamma=None, gpu_id=None,
+             importance_type=None, interaction_constraints=None,
+             learning_rate=0.01, max_delta_step=None, max_depth=3,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=1000, n_jobs=None, num_parallel_tree=None,
+             predictor=None, random_state=None, reg_alpha=None, reg_lambda=None,
+             scale_pos_weight=None, seed=42, subsample=None, tree_method=None,
+             validate_parameters=None, verbosity=None))], 'verbose': False, 'scaler': StandardScaler(), 'model': XGBRegressor(base_score=None, booster=None, colsample_bylevel=None,
+             colsample_bynode=None, colsample_bytree=None,
+             enable_categorical=False, gamma=None, gpu_id=None,
+             importance_type=None, interaction_constraints=None,
+             learning_rate=0.01, max_delta_step=None, max_depth=3,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=1000, n_jobs=None, num_parallel_tree=None,
+             predictor=None, random_state=None, reg_alpha=None, reg_lambda=None,
+             scale_pos_weight=None, seed=42, subsample=None, tree_method=None,
+             validate_parameters=None, verbosity=None), 'scaler__copy': True, 'scaler__with_mean': True, 'scaler__with_std': True, 'model__objective': 'reg:squarederror', 'model__base_score': None, 'model__booster': None, 'model__colsample_bylevel': None, 'model__colsample_bynode': None, 'model__colsample_bytree': None, 'model__enable_categorical': False, 'model__gamma': None, 'model__gpu_id': None, 'model__importance_type': None, 'model__interaction_constraints': None, 'model__learning_rate': 0.01, 'model__max_delta_step': None, 'model__max_depth': 3, 'model__min_child_weight': None, 'model__missing': nan, 'model__monotone_constraints': None, 'model__n_estimators': 1000, 'model__n_jobs': None, 'model__num_parallel_tree': None, 'model__predictor': None, 'model__random_state': None, 'model__reg_alpha': None, 'model__reg_lambda': None, 'model__scale_pos_weight': None, 'model__subsample': None, 'model__tree_method': None, 'model__validate_parameters': None, 'model__verbosity': None, 'model__seed': 42}
+2022-01-21 09:52:36 INFO     Train score: 0.8916531032799216
+2022-01-21 09:53:08 INFO     CV score: 0.8418754949572811
+2022-01-21 09:53:08 INFO     Persisted model to model/regressor.pkl

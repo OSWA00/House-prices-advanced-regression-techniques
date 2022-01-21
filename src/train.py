@@ -1,8 +1,8 @@
 
 
-
 import logging
 from pathlib import Path
+import pickle
 
 import pandas as pd
 import click
@@ -12,6 +12,7 @@ from sklearn.preprocessing import StandardScaler
 from xgboost import XGBRegressor
 
 from utility import parse_config
+
 
 @click.command()
 @click.argument("config_file", type=str, default="src/config.yml")
@@ -31,6 +32,29 @@ def train(config_file):
     model_path = config["train"]["model_path"]
 
     logging.info("config: {}".format(config['train']))
+
+    # Load proccessed data
+    df_train = pd.read_csv(processed_data)
+
+    X = df_train.drop(['SalePrice'], axis=1)
+    y = df_train['SalePrice']
+
+    logging.info("Proccesed data loaded")
+
+    # Create model
+    pipeline = Pipeline([
+        ('scaler', StandardScaler()),
+        ('model', XGBRegressor())
+    ])
+
+    pipeline.set_params(**pipeline_params)
+
+    logging.info("Pipeline created")
+    logging.info("Pipeline paramaters {}".format(pipeline.get_params()))
+
+    # Train model
+
+    # Export model
 
 
 if __name__ == '__main__':

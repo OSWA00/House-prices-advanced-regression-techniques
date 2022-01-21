@@ -10,6 +10,7 @@ from pickle import load
 
 import pandas as pd
 import click
+import numpy as np
 
 from utility import parse_config
 
@@ -45,12 +46,13 @@ def predict(config_file):
     logging.info("Trained model loaded from {}".format(model_path))
 
     # Predict
-    y_predicted = trained_model.predict(X)
-    output = pd.DataFrame(y_predicted)
+    y_predicted = pd.DataFrame(columns=['SalePrice'])
+    y_predicted['SalePrice'] = trained_model.predict(X)
+    y_predicted['SalePrice'] = np.exp(y_predicted['SalePrice'])
     logging.info("Prediction done")
 
     # Export result
-    output.to_csv(export_path, index=False)
+    y_predicted.to_csv(export_path, index=False)
     logging.info("Output file written to {}".format(export_path))
 
 
